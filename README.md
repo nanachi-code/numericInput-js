@@ -33,10 +33,10 @@ There are 2 ways to init an numeric input:
 </script>
 ```
 
-2. Using HTML `numericinput` and `max` attribute.
+2. Using HTML `numericinput` and `maxdigits` attribute.
 
 ```html
-<input type="text" name="phone" numericinput max="3" />
+<input type="text" name="phone" numericinput maxdigits="3" />
 
 <script src="jquery-3.5.1.min.js"></script>
 <script src="numericInput.js"></script>
@@ -46,7 +46,7 @@ There are 2 ways to init an numeric input:
 
 ### `jQuery(selector).numericInput(options)`
 
-`options` (default: `{max: null}`)
+`options` (default: `{maxDigits: null}`)
 
 Type: plainObject
 
