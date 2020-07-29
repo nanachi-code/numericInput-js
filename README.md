@@ -51,6 +51,8 @@ Type: plainObject
 
 `max`: Maximum amount of digits accepted.
 
+Init numericInput on a specified jQuery selector.
+
 ## Changelog
 
 `1.0.0` Init release
