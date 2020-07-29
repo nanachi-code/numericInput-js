@@ -54,3 +54,4 @@ Type: plainObject
 ## Changelog
 
 `1.0.0` Init release
+`1.0.1` Now run on dynamically added input.

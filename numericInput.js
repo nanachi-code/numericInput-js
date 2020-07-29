@@ -4,7 +4,7 @@
  *
  * Force input fields to accept numeric value only.
  *
- * @version 1.0.0
+ * @version 1.0.1
  * @author Nanachi <github.com/nanachi-code>
  */
 (function ($) {
@@ -18,8 +18,13 @@
         );
 
         this.attr("numericinput", "");
-        this.on("input", function () {
-            $(this).val($(this).val().replace(/\D/g, "").substring(0, options.max));
+        $(document).on("input", "[numericinput]", function () {
+            $(this).val(
+                $(this)
+                    .val()
+                    .replace(/\D/g, "")
+                    .substring(0, options.max ? options.max : $(this).val().length)
+            );
         });
 
         return this;
