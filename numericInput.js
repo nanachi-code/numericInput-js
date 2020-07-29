@@ -17,7 +17,13 @@
             options
         );
 
-        this.attr("numericinput", "");
+        // Set attribute
+        if (this.attr("numericinput")) {
+            options.max = this.attr("max") ? this.attr("max") : null;
+        } else {
+            this.attr("numericinput", "");
+        }
+
         $(document).on("input", "[numericinput]", function () {
             $(this).val(
                 $(this)
