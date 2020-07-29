@@ -19,27 +19,25 @@
 
         // Set attribute
         if (this.attr("numericinput") != undefined) {
-            options.max = this.attr("max") ? this.attr("max") : null;
+            throw new Error("This element has already initialized numericInput!");
         } else {
             this.attr("numericinput", "");
             if (options.max) {
                 this.attr("max", options.max);
             }
         }
-
-        $(document).on("input", "[numericinput]", function () {
-            $(this).val(
-                $(this)
-                    .val()
-                    .replace(/\D/g, "")
-                    .substring(0, options.max ? options.max : $(this).val().length)
-            );
-        });
-
         return this;
     };
 
     $(function () {
-        $("[numericinput]").numericInput();
+        $(document).on("input", "[numericinput]", function () {
+            let max = $(this).attr("max");
+            $(this).val(
+                $(this)
+                    .val()
+                    .replace(/\D/g, "")
+                    .substring(0, max ? max : $(this).val().length)
+            );
+        });
     });
 })(jQuery);
