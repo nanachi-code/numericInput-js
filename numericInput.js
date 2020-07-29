@@ -20,7 +20,6 @@
         // Set attribute
         if (this.attr("numericinput") != undefined) {
             options.max = this.attr("max") ? this.attr("max") : null;
-            alert(options.max);
         } else {
             this.attr("numericinput", "");
             if (options.max) {
