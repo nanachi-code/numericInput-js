@@ -52,7 +52,7 @@ Type: plainObject
 
 `options` accepts following properties:
 
--   `max`: Maximum amount of digits.
+-   `maxDigits`: Maximum amount of digits.
 
 Init numericInput on a specified jQuery selector.
 

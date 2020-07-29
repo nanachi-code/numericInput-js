@@ -12,7 +12,7 @@
         options = $.extend(
             {},
             {
-                max: null,
+                maxDigits: null,
             },
             options
         );
@@ -22,8 +22,8 @@
             throw new Error("Call on an already initialized input!");
         } else {
             this.attr("numericinput", "");
-            if (options.max) {
-                this.attr("max", options.max);
+            if (options.maxDigits) {
+                this.attr("maxdigits", options.maxDigits);
             }
         }
         return this;
@@ -31,7 +31,7 @@
 
     $(function () {
         $(document).on("input", "[numericinput]", function () {
-            let max = $(this).attr("max");
+            let max = $(this).attr("maxdigits");
             $(this).val(
                 $(this)
                     .val()
