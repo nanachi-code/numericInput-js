@@ -18,7 +18,7 @@ Force input fields to accept numeric value only.
 
 ## Usage
 
-There 2 ways to init an numeric input:
+There are 2 ways to init an numeric input:
 
 1. Using jQuery selector
 
