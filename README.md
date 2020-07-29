@@ -61,3 +61,5 @@ Init numericInput on a specified jQuery selector.
 `1.0.0` Init release
 
 `1.0.1` Now run on dynamically added input.
+
+`1.0.2` Fix bug with dynamically added input.
