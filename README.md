@@ -47,13 +47,17 @@ There are 2 ways to init an numeric input:
 ### `jQuery(selector).numericInput(options)`
 
 `options` (default: `{max: null}`)
+
 Type: plainObject
 
-`max`: Maximum amount of digits accepted.
+`options` accepts following properties:
+
+-   `max`: Maximum amount of digits.
 
 Init numericInput on a specified jQuery selector.
 
 ## Changelog
 
 `1.0.0` Init release
+
 `1.0.1` Now run on dynamically added input.
