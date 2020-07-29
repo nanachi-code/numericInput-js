@@ -33,7 +33,7 @@ There are 2 ways to init an numeric input:
 </script>
 ```
 
-2. Using HTML numericinput attribute.
+2. Using HTML `numericinput` and `max` attribute.
 
 ```html
 <input type="text" name="phone" numericinput max="3" />

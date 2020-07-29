@@ -19,7 +19,7 @@
 
         // Set attribute
         if (this.attr("numericinput") != undefined) {
-            throw new Error("This element has already initialized numericInput!");
+            throw new Error("Call on an already initialized input!");
         } else {
             this.attr("numericinput", "");
             if (options.max) {
