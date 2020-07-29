@@ -32,12 +32,12 @@
     $(function () {
         $(document).on("input", "[numericinput]", function () {
             let max = $(this).attr("maxdigits");
-            $(this).val(
-                $(this)
-                    .val()
-                    .replace(/\D/g, "")
-                    .substring(0, max ? max : $(this).val().length)
-            );
+            let _val =
+                max != undefined
+                    ? $(this).val().replace(/\D/g, "").substring(0, max)
+                    : $(this).val().replace(/\D/g, "");
+            // Update value
+            $(this).val(_val);
         });
     });
 })(jQuery);
