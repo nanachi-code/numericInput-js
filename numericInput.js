@@ -4,7 +4,7 @@
  *
  * Force input fields to accept numeric value only.
  *
- * @version 1.0.1
+ * @version 1.0.2
  * @author Nanachi <github.com/nanachi-code>
  */
 (function ($) {
